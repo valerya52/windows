@@ -25,7 +25,7 @@ const modals = () => {
 
         modal.addEventListener('click', (e) => {
             if(e.target === modal) {
-                document.style.display = 'none';
+                modal.style.display = '';
                 document.body.style.overflow = '';
             }
         });
@@ -40,7 +40,7 @@ const modals = () => {
 
     bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
     bindModal('.phone_link', '.popup', '.popup .popup_close');
-    showModalByTime('.popup_engineer', 60000);
+    // showModalByTime('.popup_engineer', 60000);
 }
 
-export default modals();
+export default modals;
